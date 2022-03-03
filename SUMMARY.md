@@ -10,9 +10,7 @@
 ## 操作命令
 
 * [CentOS 8开放防火墙端口](cao-zuo-ming-ling/centos-8-kai-fang-fang-huo-qiang-duan-kou.md)
-* [Members](cao-zuo-ming-ling/members.md)
-* [Task Lists](cao-zuo-ming-ling/task-lists.md)
-* [Tasks](cao-zuo-ming-ling/tasks.md)
+* [Linux 自定义欢迎界面](cao-zuo-ming-ling/linux-zi-ding-yi-huan-ying-jie-mian.md)
 
 ## 系统维护
 
