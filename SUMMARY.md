@@ -6,24 +6,19 @@
 
 * [Centos 8安装MySQL5.7](cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md)
 * [CentOS 8 配置阿里镜像源](cha-jian-xiang-guan/centos-8-pei-zhiali-jing-xiang-yuan.md)
-* [Advanced permissions](cha-jian-xiang-guan/advanced-permissions.md)
 
-## Fundamentals
+## 操作命令
 
-* [Projects](fundamentals/projects.md)
-* [Members](fundamentals/members.md)
-* [Task Lists](fundamentals/task-lists.md)
-* [Tasks](fundamentals/tasks.md)
+* [Projects](cao-zuo-ming-ling/projects.md)
+* [Members](cao-zuo-ming-ling/members.md)
+* [Task Lists](cao-zuo-ming-ling/task-lists.md)
+* [Tasks](cao-zuo-ming-ling/tasks.md)
 
-## Use Cases
+## 系统维护
 
-* [For Designers](use-cases/for-designers/README.md)
-  * [Figma Integration](use-cases/for-designers/figma-integration.md)
-* [For Engineers](use-cases/for-engineers/README.md)
-  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
-* [For Support](use-cases/for-support/README.md)
-  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
-
-## Extras
-
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+* [For Designers](xi-tong-wei-hu/for-designers/README.md)
+  * [Figma Integration](xi-tong-wei-hu/for-designers/figma-integration.md)
+* [For Engineers](xi-tong-wei-hu/for-engineers/README.md)
+  * [GitHub Integration](xi-tong-wei-hu/for-engineers/github-integration.md)
+* [For Support](xi-tong-wei-hu/for-support/README.md)
+  * [Intercom Integration](xi-tong-wei-hu/for-support/intercom-integration.md)
