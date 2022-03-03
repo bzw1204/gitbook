@@ -1,10 +1,8 @@
 # Table of contents
 
-* [📑 Linux服务器知识库](README.md)
-
 ## ☠ 插件相关
 
-* [Centos 8安装MySQL5.7](cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md)
+* [Centos 8安装MySQL5.7](README.md)
 * [CentOS 8 配置阿里镜像源](cha-jian-xiang-guan/centos-8-pei-zhiali-jing-xiang-yuan.md)
 
 ## 操作命令
