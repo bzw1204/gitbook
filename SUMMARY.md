@@ -1,22 +1,14 @@
 # Table of contents
 
-## ☠ 插件相关
+## ☠ Linux服务器
 
-* [Centos 安装Minio](README.md)
-* [Centos 8 安装Htop](cha-jian-xiang-guan/centos-8-an-zhuang-htop.md)
-* [Centos 8安装MySQL5.7](<README (1).md>)
-* [CentOS 8 配置阿里镜像源](cha-jian-xiang-guan/centos-8-pei-zhiali-jing-xiang-yuan.md)
+* [操作命令](README.md)
+  * [CentOS 8开放防火墙端口](linux-fu-wu-qi/cao-zuo-ming-ling/centos-8-kai-fang-fang-huo-qiang-duan-kou.md)
+  * [Linux 自定义欢迎界面](linux-fu-wu-qi/cao-zuo-ming-ling/linux-zi-ding-yi-huan-ying-jie-mian.md)
+* [插件安装](linux-fu-wu-qi/cha-jian-an-zhuang/README.md)
+  * [Centos 安装Minio](linux-fu-wu-qi/cha-jian-an-zhuang/centos-an-zhuang-minio.md)
+  * [CentOS 8 配置阿里镜像源](linux-fu-wu-qi/cha-jian-an-zhuang/centos-8-pei-zhiali-jing-xiang-yuan.md)
+  * [Centos 8安装MySQL5.7](linux-fu-wu-qi/cha-jian-an-zhuang/centos-8-an-zhuang-mysql5.7.md)
+  * [Centos 8 安装Htop](linux-fu-wu-qi/cha-jian-an-zhuang/centos-8-an-zhuang-htop.md)
 
-## 操作命令
-
-* [CentOS 8开放防火墙端口](cao-zuo-ming-ling/centos-8-kai-fang-fang-huo-qiang-duan-kou.md)
-* [Linux 自定义欢迎界面](cao-zuo-ming-ling/linux-zi-ding-yi-huan-ying-jie-mian.md)
-
-## 系统维护
-
-* [For Designers](xi-tong-wei-hu/for-designers/README.md)
-  * [Figma Integration](xi-tong-wei-hu/for-designers/figma-integration.md)
-* [For Engineers](xi-tong-wei-hu/for-engineers/README.md)
-  * [GitHub Integration](xi-tong-wei-hu/for-engineers/github-integration.md)
-* [For Support](xi-tong-wei-hu/for-support/README.md)
-  * [Intercom Integration](xi-tong-wei-hu/for-support/intercom-integration.md)
+## 前端
