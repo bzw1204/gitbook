@@ -1,44 +1,71 @@
----
-description: 记录事务超时处理
----
+# 📑 Linux服务器知识库
 
-# Mysql事物锁等待超时 Lock wait timeout exceeded; try restarting transaction
+{% hint style="info" %}
+**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
+{% endhint %}
 
-工作中同事遇到此异常，查找解决问题时，收集整理形成此篇文章。
+Here are a couple of examples of succinct overviews from products with really great docs:
 
-问题场景 问题出现环境： 1、在同一事务内先后对同一条数据进行插入和更新操作； 2、多台服务器操作同一数据库； 3、瞬时出现高并发现象；
+> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
+>
+> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
+>
+> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
 
-不断的有一下异常抛出，异常信息：
+> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
+>
+> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
 
-```text
-org.springframework.dao.CannotAcquireLockException: 
-### Error updating database.  Cause: java.sql.SQLException: Lock wait timeout exceeded; try restarting transaction
-### The error may involve com.*.dao.mapper.PhoneFlowMapper.updateByPrimaryKeySelective-Inline
-### The error occurred while setting parameters
-### SQL:-----后面为SQL语句及堆栈信息--------
-```
+## Getting Started
 
-原因分析 在高并发的情况下，Spring事物造成数据库死锁，后续操作超时抛出异常。 Mysql数据库采用InnoDB模式，默认参数:innodb\_lock\_wait\_timeout设置锁等待的时间是50s，一旦数据库锁超过这个时间就会报错。
+**Got 2 minutes?** Check out a video overview of our product:
 
-解决方案 
+{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
 
-1、通过下面语句查找到为提交事务的数据，kill掉此线程即可。
+{% hint style="info" %}
+**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
+{% endhint %}
 
-`select * from information_schema.innodb_trx` 
+### Guides: Jump right in
 
-2、增加锁等待时间，即增大下面配置项参数值，单位为秒（s）
+Follow our handy guides to get started on the basics as quickly as possible:
 
-`innodb_lock_wait_timeout=500` 
+{% content-ref url="guides/creating-your-first-project.md" %}
+[creating-your-first-project.md](guides/creating-your-first-project.md)
+{% endcontent-ref %}
 
-3、优化存储过程,事务避免过长时间的等待。
+{% content-ref url="guides/creating-your-first-task.md" %}
+[creating-your-first-task.md](guides/creating-your-first-task.md)
+{% endcontent-ref %}
 
-参考信息 1、锁等待超时。是当前事务在等待其它事务释放锁资源造成的。可以找出锁资源竞争的表和语句，优化SQL，创建索引等。如果还是不行，可以适当减少并发线程数。 2、事务在等待给某个表加锁时超时，估计是表正被另的进程锁住一直没有释放。 可以用 SHOW INNODB STATUS/G; 看一下锁的情况。 3、搜索解决之道，在管理节点的\[ndbd default\]区加： TransactionDeadLockDetectionTimeOut=10000（设置 为10秒）默认是1200（1.2秒） 4、InnoDB会自动的检测死锁进行回滚，或者终止死锁的情况。
+{% content-ref url="guides/advanced-permissions.md" %}
+[advanced-permissions.md](guides/advanced-permissions.md)
+{% endcontent-ref %}
 
-InnoDB automatically detects transaction deadlocks and rolls back a transaction or transactions to break the deadlock. InnoDB tries to pick small transactions to roll back, where the size of a transaction is determined by the number of rows inserted, updated, or deleted.
+{% hint style="info" %}
+**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
+{% endhint %}
 
-如果参数innodb\_table\_locks=1并且autocommit=0时，InnoDB会留意表的死锁，和MySQL层面的行级锁。另外，InnoDB不会检测MySQL的Lock Tables命令和其他存储引擎死锁。你应该设置innodb\_lock\_wait\_timeout来解决这种情况。 innodb\_lock\_wait\_timeout是Innodb放弃行级锁的超时时间。
+### Fundamentals: Dive a little deeper
 
-参考文章：[http://www.51testing.com/html/16/390216-838016.html](http://www.51testing.com/html/16/390216-838016.html)
+Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-深入研究 由于此项目采用Spring+mybatis框架，事物控制采用“org.springframework.jdbc.datasource.DataSourceTransactionManager”类进行处理。此处还需进行进一步调研Spring实现的机制
+{% content-ref url="fundamentals/projects.md" %}
+[projects.md](fundamentals/projects.md)
+{% endcontent-ref %}
 
+{% content-ref url="fundamentals/members.md" %}
+[members.md](fundamentals/members.md)
+{% endcontent-ref %}
+
+{% content-ref url="fundamentals/task-lists.md" %}
+[task-lists.md](fundamentals/task-lists.md)
+{% endcontent-ref %}
+
+{% content-ref url="fundamentals/tasks.md" %}
+[tasks.md](fundamentals/tasks.md)
+{% endcontent-ref %}
+
+{% hint style="info" %}
+**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
+{% endhint %}
