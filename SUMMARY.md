@@ -5,7 +5,7 @@
 ## ☠ 插件相关
 
 * [Centos 8安装MySQL5.7](cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md)
-* [Creating your first task](cha-jian-xiang-guan/creating-your-first-task.md)
+* [CentOS 8 配置阿里镜像源](cha-jian-xiang-guan/centos-8-pei-zhiali-jing-xiang-yuan.md)
 * [Advanced permissions](cha-jian-xiang-guan/advanced-permissions.md)
 
 ## Fundamentals

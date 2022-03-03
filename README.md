@@ -34,8 +34,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [centos-8-an-zhuang-mysql5.7.md](cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md)
 {% endcontent-ref %}
 
-{% content-ref url="cha-jian-xiang-guan/creating-your-first-task.md" %}
-[creating-your-first-task.md](cha-jian-xiang-guan/creating-your-first-task.md)
+{% content-ref url="cha-jian-xiang-guan/centos-8-pei-zhiali-jing-xiang-yuan.md" %}
+[centos-8-pei-zhiali-jing-xiang-yuan.md](cha-jian-xiang-guan/centos-8-pei-zhiali-jing-xiang-yuan.md)
 {% endcontent-ref %}
 
 {% content-ref url="cha-jian-xiang-guan/advanced-permissions.md" %}
