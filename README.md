@@ -16,9 +16,9 @@ Here are a couple of examples of succinct overviews from products with really gr
 >
 > — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
 
-## Getting Started
+## 插件相关
 
-**Got 2 minutes?** Check out a video overview of our product:
+**相关Got 2 minutes?** Check out a video overview of our product:
 
 {% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
 
@@ -26,20 +26,20 @@ Here are a couple of examples of succinct overviews from products with really gr
 **Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
 {% endhint %}
 
-### Guides: Jump right in
+### 操作命令
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="guides/creating-your-first-project.md" %}
-[creating-your-first-project.md](guides/creating-your-first-project.md)
+{% content-ref url="cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md" %}
+[centos-8-an-zhuang-mysql5.7.md](cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/creating-your-first-task.md" %}
-[creating-your-first-task.md](guides/creating-your-first-task.md)
+{% content-ref url="cha-jian-xiang-guan/creating-your-first-task.md" %}
+[creating-your-first-task.md](cha-jian-xiang-guan/creating-your-first-task.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/advanced-permissions.md" %}
-[advanced-permissions.md](guides/advanced-permissions.md)
+{% content-ref url="cha-jian-xiang-guan/advanced-permissions.md" %}
+[advanced-permissions.md](cha-jian-xiang-guan/advanced-permissions.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}

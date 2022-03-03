@@ -2,11 +2,11 @@
 
 * [📑 Linux服务器知识库](README.md)
 
-## Guides
+## ☠ 插件相关
 
-* [Creating your first project](guides/creating-your-first-project.md)
-* [Creating your first task](guides/creating-your-first-task.md)
-* [Advanced permissions](guides/advanced-permissions.md)
+* [Centos 8安装MySQL5.7](cha-jian-xiang-guan/centos-8-an-zhuang-mysql5.7.md)
+* [Creating your first task](cha-jian-xiang-guan/creating-your-first-task.md)
+* [Advanced permissions](cha-jian-xiang-guan/advanced-permissions.md)
 
 ## Fundamentals
 
